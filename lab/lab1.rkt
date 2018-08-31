@@ -1,3 +1,6 @@
+; Getting started: click that button labelled "Raw", 
+; and copy-paste the text from this file to your DrRacket Editor pane
+
 (require 2htdp/image)
 (require 2htdp/universe)
 
