@@ -1,7 +1,7 @@
 (require 2htdp/image)
 (require 2htdp/universe)
 
-; Section #:
+; Section #: 1
 ; Student ID 1:
 ; Student ID 2:
 
@@ -15,6 +15,8 @@
 ; PART 1
 ; Under each comment below, write an expression that meets the comment's description
 
+; Remember: simple expressions are literal values
+
 ; 1.1 simple expression of type number
 
 
@@ -24,7 +26,7 @@
 ; 1.3 simple expression of type boolean
 
 
-; 1.4 simple expression of type image
+; 1.4 simple expression of type image (hint: cute cats)
 
 
 ; Remember: compound expressions involve operations on other expressions
@@ -52,14 +54,14 @@
 ;
 ; (Note: sometimes there is more than one reasonable way to correct each of these!)
 
-; 2.1
-(13.13)
+; 2.1 The number 13.13
+; (13.13)
 
-; 2.2
-circle ("green" 55)
+; 2.2 A solid green circle
+; circle ("green" 55)
 
-; 2.3
-(+ (48) (/ 15 3)) (5 * 8)))
+; 2.3 Should result in 93
+; (+ (48) (/ 15 3)) (5 * 8)))
 
 
 ; PART 3
@@ -91,3 +93,6 @@ circle ("green" 55)
 ;    exploring DrRacket's Help feature, described a bit at the end of
 ;    the "Some DrRacket Tidbits" handout.
 
+; SUBMISSION: 
+; - Save this file as lab1.rkt
+; - EACH student in the pair should submit (the same file) to Blackboard: Exercises (in the left-hand sidebar) > Lab 1
