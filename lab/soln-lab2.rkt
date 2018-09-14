@@ -7,9 +7,9 @@
 ; 2. Signature (2 points), purpose (2 points), stub (2 points)
 ; 3. Examples (Minimum of 2 examples: 2 points)
 ; 4. Template (2 points)
-; 5. Function definition (5 points)
+; 5. Function definition (10 points)
 ; 6. Test and debug (0 points)
-; TOTAL 10 points/problem
+; TOTAL 20 points/problem
 
 
 ; Getting started: click that button labelled "Raw", 
