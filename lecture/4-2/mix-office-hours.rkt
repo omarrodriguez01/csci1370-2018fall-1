@@ -26,4 +26,7 @@
                     [(<= 1 hour 12) #false]
                     [(<= 13 hour 18) #true]
                     [(<= 19 hour 24) #false])]
-    [(> day 5) #false]))
+    [(> day 5) (cond
+                    [(<= 1 hour 12) #false]
+                    [(<= 13 hour 18) #false]
+                    [(<= 19 hour 24) #false])]))
