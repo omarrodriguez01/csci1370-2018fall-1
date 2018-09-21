@@ -3,30 +3,59 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname mix-office-hours) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 
 
+(define (fn-primary-color c)
+  (cond
+    [(string=? c "red") ...]
+    [(string=? c "yellow") ...]
+    [(string=? c "blue") ...]))
+
+
 (define (mix a b)
   (cond
     [(string=? a "red") (cond
-                          [(string=? b "red") "red"]
-                          [(string=? b "yellow") "orange"]
-                          [(string=? b "blue") "violet"])]
+                          [(string=? b "red") ...]
+                          [(string=? b "yellow") ...]
+                          [(string=? b "blue") ...])]
     [(string=? a "yellow") (cond
-                          [(string=? b "red") "orange"]
-                          [(string=? b "yellow") "yellow"]
-                          [(string=? b "blue") "green"])]
+                          [(string=? b "red") ...]
+                          [(string=? b "yellow") ...]
+                          [(string=? b "blue") ...])]
     [(string=? a "blue") (cond
-                          [(string=? b "red") "violet"]
-                          [(string=? b "yellow") "green"]
-                          [(string=? b "blue") "blue"])]))
+                          [(string=? b "red") ...]
+                          [(string=? b "yellow") ...]
+                          [(string=? b "blue") ...])]))
 
-  
+
+
+
+
+(check-expect (mix "red" "red") "red")
+(check-expect (mix "red" "yellow") "orange")
+(check-expect (mix "red" "blue") "violet")
+
+(check-expect (mix "yellow" "red") "orange")
+(check-expect (mix "yellow" "yellow") "yellow")
+(check-expect (mix "yellow" "blue") "green")
+
+(check-expect (mix "blue" "red") "violet")
+(check-expect (mix "blue" "yellow") "green")
+(check-expect (mix "blue" "blue") "blue")
+
+
+
+
+
+
 
 (define (available? day hour)
   (cond
-    [(<= 1 day 5) (cond
-                    [(<= 1 hour 12) #false]
-                    [(<= 13 hour 18) #true]
-                    [(<= 19 hour 24) #false])]
-    [(> day 5) (cond
-                    [(<= 1 hour 12) #false]
-                    [(<= 13 hour 18) #false]
-                    [(<= 19 hour 24) #false])]))
+    [(and (<= 1 day 5) (<= 13 hour 18)) #true]
+    [else #false]))
+
+
+
+(define (available? day hour)
+  (and (<= 1 day 5) (<= 13 hour 18)))
+
+
+
